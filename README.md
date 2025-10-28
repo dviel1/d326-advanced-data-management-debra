@@ -63,8 +63,9 @@ It focuses on building **detailed and summary business reports** using PostgreSQ
 ## 🧭 Database Diagram (ERD)
 
 <p align="center">
-  <img src="docs/dvd_rental_erd_layout.png" alt="DVD Rental ERD" width="600"/>
+  <img src="docs/dvd_rental_erd_layout.png" alt="DVD Rental ERD" width="600">
 </p>
+
 
 
 ---
