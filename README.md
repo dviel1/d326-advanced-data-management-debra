@@ -1,40 +1,92 @@
-# Advanced Data Management (D326) — Portfolio Package
+# 📊 Advanced Data Management (D326) — WGU Portfolio Project
 
-This repository packages my completed work for **WGU D326: Advanced Data Management**. It showcases SQL design, procedural logic, user‑defined functions, and reporting artifacts using the classic DVD Rental schema.
+This repository showcases my completed work for **WGU D326: Advanced Data Management**.  
+It demonstrates SQL database design, user-defined functions (UDFs), procedural logic, ETL routines, and reporting using the classic DVD Rental schema.  
 
-## Highlights
-- **ETL/refresh routine**: reproducible scripts for building summary tables
-- **UDFs**: custom transformations (e.g., labeling rental durations)
-- **Queries**: detailed vs. summary report SQL with validation steps
-- **Report**: written analysis covering rubric sections (A–F)
-- **Repro guide**: run-book for setting up schema and executing procedures
+> 🧑‍💻 **Author:** Debra J. Viel  
+> 🏫 **Course:** Advanced Data Management (D326) — WGU  
+> 📅 **Term Completed:** 2025  
 
 ---
 
-## Repo Structure
-```
-src/
-  sql/
-    functions/        # CREATE FUNCTION ... (UDFs)
-    procedures/       # CREATE PROCEDURE ... (ETL/refresh, load)
-    queries/          # SELECT statements for reports/validation
-  python/             # Optional helper scripts (CSV -> DB, checks)
-reports/              # Written report (md/docx/pdf)
-data/
-  raw/                # Source CSVs / inputs (excluded in git)
-  processed/          # Derived data (excluded in git)
-docs/                 # ERD, diagrams, screenshots
-.github/workflows/    # (Optional) CI checks / lint
-```
+## 🚀 Project Overview
 
-## Quickstart
-1. Provision a PostgreSQL database and load the **DVD Rental** schema.
-2. Run files in `src/sql/functions/` then `src/sql/procedures/` (order matters).
-3. Execute the report queries in `src/sql/queries/` to verify results.
-4. Find your final DOCX under `reports/`.
+This project was developed as part of the D326 performance assessment.  
+It focuses on building **detailed and summary business reports** using PostgreSQL, custom transformations, and automated refresh procedures.
 
-## Author
-**Debra J. Viel** — “Art that sees, data that speaks, heart that serves.”
+**Key components include:**
+- 📌 **ETL/Refresh Procedures** — reproducible scripts to rebuild reporting tables  
+- 🧠 **UDFs (User Defined Functions)** — transforming rental durations into labeled categories  
+- 🧾 **SQL Reporting Queries** — producing both detailed and summary revenue views  
+- 📊 **Rubric-Aligned Written Report** — included in `/reports`  
+- 🛠️ **Folder Structure** ready for GitHub portfolio display
 
-## Included Final Report
-- `reports/Debra_Viel_SQL_Business_Report_Revised.docx` — submitted business report.
+---
+
+## 📂 Repository Structure
+
+.
+├── src/
+│ └── sql/
+│ ├── functions/ # UDFs (e.g., duration_label.sql)
+│ ├── procedures/ # ETL/refresh procedures
+│ └── queries/ # Reporting & validation queries
+├── reports/ # Final written business report (DOCX)
+├── docs/ # Diagrams, ERDs, screenshots (optional)
+├── data/
+│ ├── raw/ # Source data (excluded from Git)
+│ └── processed/ # Processed outputs (excluded from Git)
+├── .github/workflows/ # CI (optional)
+├── LICENSE
+├── README.md
+└── .gitignore
+
+
+---
+
+## 🧰 Technologies Used
+
+- 🐘 **PostgreSQL / PLpgSQL**
+- 📝 SQL DDL, DML, UDFs & Stored Procedures
+- 🧮 Data modeling & ETL scripting
+- 🖥️ Git & GitHub for version control
+
+---
+
+## 🧪 Running the Project
+
+1. **Set up a PostgreSQL database** and load the `dvdrental` schema.  
+2. Run scripts in `src/sql/functions/` followed by `src/sql/procedures/`.  
+3. Execute queries in `src/sql/queries/` to generate reporting outputs.  
+4. Open the DOCX in `/reports` to view the written analysis.
+
+_Optional:_ Add screenshots or ERD diagrams in `/docs` for extra polish.
+
+---
+
+## 🏆 Learning Outcomes
+
+- ✅ Built and deployed reusable ETL and reporting logic  
+- ✅ Created UDF transformations for cleaner business insights  
+- ✅ Delivered both technical SQL assets and professional documentation  
+- ✅ Packaged work in a clean, shareable GitHub portfolio repo
+
+---
+
+## ✨ Author
+
+**Debra J. Viel**  
+> *“Art that sees, data that speaks, heart that serves.”*  
+📍 Data Analytics Student | Sketch Artist | Community Advocate
+
+[📎 GitHub Profile](https://github.com/dviel1)
+
+---
+
+## 🪪 License
+
+This project is released under the **MIT License**.  
+You are free to use, modify, and share with attribution.
+
+---
+
