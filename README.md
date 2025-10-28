@@ -61,6 +61,9 @@ It focuses on building **detailed and summary business reports** using PostgreSQ
 4. Open the DOCX in `/reports` to view the written analysis.
 
 _Optional:_ Add screenshots or ERD diagrams in `/docs` for extra polish.
+## 🧭 Database Diagram (ERD)
+
+![DVD Rental ERD](docs/A_2D_Entity-Relationship_Diagram_(ERD)_in_the_imag.png)
 
 ---
 
